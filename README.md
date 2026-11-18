@@ -57,8 +57,3 @@ Al ejecutar `main.py`, se creará automáticamente el archivo `logs/sistema_fj.l
 
 ## Flujo Sugerido de Trabajo Colaborativo en GitHub (5 Integrantes)
 
-1. **Integrante 1**: `src/exceptions/excepciones.py` y `src/utils/logger.py`
-2. **Integrante 2**: `src/models/entidad.py` y `src/models/cliente.py`
-3. **Integrante 3**: `src/models/servicio.py` y `src/models/servicios_especializados.py`
-4. **Integrante 4**: `src/models/reserva.py` y `src/services/gestor_sistema.py`
-5. **Integrante 5**: `main.py`, `tests/test_sistema.py` y `README.md`
