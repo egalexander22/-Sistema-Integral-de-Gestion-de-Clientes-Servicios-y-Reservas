@@ -1,0 +1,37 @@
+2026-11-18 00:46:29 | INFO     | Sistema Software FJ inicializado correctamente.
+2026-11-18 00:46:29 | INFO     | Cliente registrado: Cliente [CLI-001] Laura Gómez | Doc: 1032456789 | Correo: laura.gomez@correo.com | Tel: 3001234567 | Estado: Activo
+2026-11-18 00:46:29 | INFO     | Finalizado intento de registro para cliente ID 'CLI-001'.
+2026-11-18 00:46:29 | INFO     | Cliente registrado: Cliente [CLI-002] Carlos Mendoza | Doc: 79854123 | Correo: carlos.m@empresa.co | Tel: +573109876543 | Estado: Activo
+2026-11-18 00:46:29 | INFO     | Finalizado intento de registro para cliente ID 'CLI-002'.
+2026-11-18 00:46:29 | INFO     | Cliente registrado: Cliente [CLI-003] Andrés Ríos | Doc: 1015443322 | Correo: andres.rios@correo.com | Tel: 3157778899 | Estado: Inactivo
+2026-11-18 00:46:29 | INFO     | Finalizado intento de registro para cliente ID 'CLI-003'.
+2026-11-18 00:46:29 | ERROR    | [simulacion_op2] DatosInvalidosError: [ERR_DATOS_INVALIDOS] El correo electrónico 'correo_invalido' no tiene un formato válido.
+2026-11-18 00:46:29 | ERROR    | [registrar_cliente] DatosInvalidosError: [ERR_DATOS_INVALIDOS] Ya existe un cliente con ID 'CLI-005' o documento '1032456789'.
+2026-11-18 00:46:29 | INFO     | Finalizado intento de registro para cliente ID 'CLI-005'.
+2026-11-18 00:46:29 | INFO     | Servicio registrado: ReservaSala [SRV-001] 'Sala Innovación A' | Cap: 20 pers. | con proyector | Tarifa: $80,000.00/h | Disponible
+2026-11-18 00:46:29 | INFO     | Servicio registrado: AlquilerEquipo [SRV-002] 'Kit Servidores Lab' | Cat: Servidor | Unidades: 2 | Depósito: $100,000.00 | Tarifa: $45,000.00/h | Disponible
+2026-11-18 00:46:29 | INFO     | Servicio registrado: AsesoriaEspecializada [SRV-003] 'Arquitectura Cloud' | Área: Cloud & DevOps | Consultor: Ing. Sofía Vega | Modalidad: presencial | Tarifa: $150,000.00/h | Disponible
+2026-11-18 00:46:29 | INFO     | Servicio registrado: ReservaSala [SRV-004] 'Sala Mantenimiento' | Cap: 10 pers. | sin proyector | Tarifa: $60,000.00/h | No disponible
+2026-11-18 00:46:29 | ERROR    | [simulacion_op5_tarifa] DatosInvalidosError: [ERR_DATOS_INVALIDOS] La tarifa base del servicio debe ser mayor a cero.
+2026-11-18 00:46:29 | ERROR    | [simulacion_op5_modalidad] DatosInvalidosError: [ERR_DATOS_INVALIDOS] Modalidad 'hibrida' inválida. Use 'virtual' o 'presencial'.
+2026-11-18 00:46:29 | INFO     | Reserva creada: Reserva [RES-001] | Cliente: Laura Gómez | Servicio: Sala Innovación A | Duración: 8.0h | Estado: PENDIENTE | Total: Por calcular
+2026-11-18 00:46:29 | INFO     | Reserva confirmada: Reserva [RES-001] | Cliente: Laura Gómez | Servicio: Sala Innovación A | Duración: 8.0h | Estado: CONFIRMADA | Total: Por calcular
+2026-11-18 00:46:29 | INFO     | Reserva procesada exitosamente: Reserva [RES-001] | Cliente: Laura Gómez | Servicio: Sala Innovación A | Duración: 8.0h | Estado: PROCESADA | Total: $640,993.50
+2026-11-18 00:46:29 | INFO     | Intento de procesamiento concluido para 'RES-001'.
+2026-11-18 00:46:29 | INFO     | Reserva creada: Reserva [RES-002] | Cliente: Carlos Mendoza | Servicio: Kit Servidores Lab | Duración: 5.0h | Estado: PENDIENTE | Total: Por calcular
+2026-11-18 00:46:29 | INFO     | Reserva confirmada: Reserva [RES-002] | Cliente: Carlos Mendoza | Servicio: Kit Servidores Lab | Duración: 5.0h | Estado: CONFIRMADA | Total: Por calcular
+2026-11-18 00:46:29 | INFO     | Reserva procesada exitosamente: Reserva [RES-002] | Cliente: Carlos Mendoza | Servicio: Kit Servidores Lab | Duración: 5.0h | Estado: PROCESADA | Total: $690,200.00
+2026-11-18 00:46:29 | INFO     | Intento de procesamiento concluido para 'RES-002'.
+2026-11-18 00:46:29 | ERROR    | [crear_reserva] ServicioNoDisponibleError: [ERR_SERVICIO_NO_DISPONIBLE] El servicio 'Sala Mantenimiento' no está disponible actualmente.
+2026-11-18 00:46:29 | ERROR    | [crear_reserva] ReservaInvalidaError: [ERR_RESERVA_INVALIDA] El cliente 'Andrés Ríos' está inactivo y no puede reservar.
+2026-11-18 00:46:29 | ERROR    | [crear_reserva] DatosInvalidosError: [ERR_DATOS_INVALIDOS] La duración de la reserva debe ser mayor a 0 horas.
+2026-11-18 00:46:29 | ERROR    | [crear_reserva] EntidadNoEncontradaError: [ERR_ENTIDAD_NO_ENCONTRADA] No se encontró el cliente con ID 'CLI-999'.
+2026-11-18 00:46:29 | INFO     | Reserva creada: Reserva [RES-007] | Cliente: Carlos Mendoza | Servicio: Arquitectura Cloud | Duración: 4.0h | Estado: PENDIENTE | Total: Por calcular
+2026-11-18 00:46:29 | INFO     | Reserva cancelada (Cambio de agenda del cliente): Reserva [RES-007] | Cliente: Carlos Mendoza | Servicio: Arquitectura Cloud | Duración: 4.0h | Estado: CANCELADA | Total: Por calcular
+2026-11-18 00:46:29 | ERROR    | [procesar_reserva] OperacionNoPermitidaError: [ERR_OPERACION_NO_PERMITIDA] Solo se pueden procesar reservas CONFIRMADAS (estado actual: CANCELADA).
+2026-11-18 00:46:29 | INFO     | Intento de procesamiento concluido para 'RES-007'.
+2026-11-18 00:46:29 | ERROR    | [cancelar_reserva] OperacionNoPermitidaError: [ERR_OPERACION_NO_PERMITIDA] No se puede cancelar la reserva 'RES-001' porque ya fue PROCESADA.
+2026-11-18 00:46:29 | INFO     | Reserva creada: Reserva [RES-008] | Cliente: Laura Gómez | Servicio: Arquitectura Cloud | Duración: 2.0h | Estado: PENDIENTE | Total: Por calcular
+2026-11-18 00:46:29 | INFO     | Reserva confirmada: Reserva [RES-008] | Cliente: Laura Gómez | Servicio: Arquitectura Cloud | Duración: 2.0h | Estado: CONFIRMADA | Total: Por calcular
+2026-11-18 00:46:29 | ERROR    | [procesar_reserva] ReservaInvalidaError: [ERR_RESERVA_INVALIDA] No fue posible calcular el costo de la reserva 'RES-008'. | Causa original: CalculoInconsistenteError('[ERR_CALCULO_INCONSISTENTE] El descuento (150.0%) debe estar entre 0% y 100%.')
+2026-11-18 00:46:29 | INFO     | Intento de procesamiento concluido para 'RES-008'.
